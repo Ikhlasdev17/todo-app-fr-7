@@ -25,3 +25,27 @@
 		}
 	}
 }
+
+.layout {
+	@apply w-full h-screen flex;
+
+	.sidebar {
+		@apply w-[300px] h-screen sticky top-0 left-0 bg-indigo-300 shadow-lg rounded-r-lg p-6;
+
+		ul {
+			li {
+				a {
+					@apply my-4 py-4 px-6 block rounded-md text-xl text-white font-semibold;
+
+					&.active {
+						@apply bg-white shadow-md text-slate-700;
+					}
+				}
+			}
+		}
+	}
+}
+
+.main {
+	@apply w-full p-[30px];
+}
